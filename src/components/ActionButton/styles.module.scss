@@ -1,0 +1,18 @@
+.actionButton {
+  opacity: 0.6;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s all ease-in-out;
+  transform-origin: 50% 50%;
+  vertical-align: middle;
+  height: 100%;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.12);
+    transition: 0.18s all ease-out;
+  }
+  &:active {
+    transform: scale(0.92);
+  }
+}

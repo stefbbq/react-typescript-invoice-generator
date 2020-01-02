@@ -1,0 +1,34 @@
+@import "~scss/bootstrap";
+
+.headingText {
+  padding-top: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.fieldsContainer {
+  text-align: right;
+}
+.descriptionField {
+  width: 100%;
+}
+.numberField {
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.addButton {
+  opacity: 0.6;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s all ease-out !important;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.18s all ease-out;
+  }
+  &:active {
+    transform: scale(0.92);
+  }
+}

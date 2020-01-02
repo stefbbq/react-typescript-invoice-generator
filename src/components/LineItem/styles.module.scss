@@ -1,0 +1,16 @@
+.lineItem {
+  &:not(:first-child) {
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+
+  :global {
+    .numberCell {
+      text-align: right;
+      width: 70px;
+
+      &.quantityCell {
+        width: 40px;
+      }
+    }
+  }
+}

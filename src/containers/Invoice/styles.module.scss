@@ -1,0 +1,43 @@
+@import "~scss/bootstrap";
+@import "~scss/variables";
+
+.container {
+  background: white;
+  border-radius: $roundedCorner;
+  padding: $padding;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  @include media-breakpoint-down(xs) {
+    padding: $padding / 2;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 24px;
+
+    :global {
+      .action {
+        width: 36px;
+        padding-left: 12px;
+      }
+    }
+    tr td {
+      padding: 5px 0;
+    }
+    thead {
+      font-weight: 700;
+      text-transform: uppercase;
+      opacity: 0.6;
+
+      td {
+        padding-bottom: 6px;
+      }
+
+      :global {
+        .numberCell {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

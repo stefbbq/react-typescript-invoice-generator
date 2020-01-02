@@ -1,0 +1,14 @@
+@import "~scss/bootstrap";
+@import "~scss/variables";
+
+.logo {
+  height: 64px;
+  margin: 0 0 $padding * 2 $padding;
+  font-size: 60px;
+  opacity: 0.2;
+
+  @include media-breakpoint-down(xs) {
+    height: 24px;
+    font-size: 40px;
+  }
+}

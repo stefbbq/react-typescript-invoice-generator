@@ -1,0 +1,10 @@
+// For core DOM elements
+
+body {
+  padding: $padding;
+  background: $pageColor !important;
+
+  @include media-breakpoint-down(xs) {
+    padding: $padding $padding / 2 0 $padding / 2;
+  }
+}
